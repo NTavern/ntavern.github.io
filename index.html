@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niangzi's Tavern</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Arial';
+            background-color: #0f0f0f;
+            color: #f5f5f5;
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #d4b073;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #aaa;
+        }
+
+        .social-buttons {
+            margin-top: 1rem;
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            margin: 0 0.5rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid #d4b073;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #d4b073;
+            transition: background 0.3s;
+        }
+
+        .social-buttons a:hover {
+            background-color: #d4b073;
+            color: #0f0f0f;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h2 {
+            color: #d4b073;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            text-shadow: 0px 0px 1rem rgba(0, 0, 0, 1);
+        }
+
+        .team, .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background-color: #2a2a2a;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: #d4b073;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #bbb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1a1a1a;
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Niangzi's Tavern</h1>
+        <p style="margin-bottom:2rem;"><i>Where code flows like wine.</i></p>
+        <div class="social-buttons">
+            <a href="https://discord.gg/FRVMJDmeUN">Discord</a>
+            <a href="https://github.com/NTavern">GitHub</a>
+        </div>
+    </header>
+
+    <section id="team">
+        <h2>Meet the Team</h2>
+        <div class="team">
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/209323257?s=200&v=4" alt="Image of Jiu Niangzi">
+                <h3>Jiu Niangzi</h3>
+                <p>The Mysterious & Warm-hearted Tavern Keeper</p>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/178290242?v=4" alt="Image of Kenwool">
+                <h3>kenwool</h3>
+                <p>Niangzi's Husband</p>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmperorAlbumGenghisPortrait.jpg/250px-YuanEmperorAlbumGenghisPortrait.jpg" alt="Image of Genghis Khan">
+                <h3>Genghis Khan</h3>
+                <p>Inventor of Asian Girls</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Our Brews</h2>
+        <div class="products">
+            <div class="card">
+                <h3>sonetto-server</h3>
+                <p>A private server for Reverse 1999. <i>Brewed with Rust, Tokio, & Actix Web</i>.</p>
+                <div class="social-buttons">
+                    <a href="https://github.com/NTavern/sonetto-server">Source Code</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>pavlovia</h3>
+                <p>A database website for Reverse 1999. <i>Brewed with Next.js</i>.</p>
+                <div class="social-buttons">
+                    <a href="#">View Site</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Niangzi's Tavern. All rights reserved.
+    </footer>
+
+</body>
+</html>
